@@ -1,0 +1,135 @@
+.pageLayout{
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}.loginPage, .buttons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    margin-left: 1.5rem;
+    color:#023047;
+}
+.span{
+    color: red;
+}
+.text{
+    margin-left: -2.5rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Free_trial_button, .login_button, .submit{
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    align-items: center;
+    background-color: #023047;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px #2f2d2d;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.submit{
+    width: 20.2rem;
+    height: 2.7rem;
+    font-size:16px;
+    margin-top:1rem;
+    box-shadow:none;
+}
+.login_button{
+    background-color: #FB8500;
+}
+h3{
+    color: #023047;
+    margin-top: -1.5rem;
+}
+.form{
+    width: 100%;
+    height: 88.55vh;
+    overflow-y: hidden;
+    display: flex;
+   justify-content: flex-start;
+    align-items: center;
+}
+.loginPage__form{
+    width: 40%;
+    height: 25 rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    width: 19rem;
+    height: 2rem;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.row{
+    display: flex;
+}
+.col{
+    display: block;
+    flex: 0 0 54%;
+    max-width: 54%;
+    color: #023047;
+}
+.ant-checkbox-wrapper-checked{
+    background-color: #023047;
+}
+.illustration{
+    width: 60%;
+    height: 88.55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow-x: hidden;
+    margin-right: 1rem;
+}
+hr {
+    border:none;
+       width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #fdf9f9;
+      box-shadow: 0 20px 20px -20px #333;
+      margin: -50px auto 10px; 
+      margin-bottom: 0px;
+  }
+  @media only screen and (max-width: 600px) {
+    .buttons, .Free_trial_button, .login_button,.illustration{
+        display: none;
+    } 
+    .form, .loginPage__form,.submit{
+        width: 100%;
+    }
+    .input{
+        width: 92%;
+    }
+   .submit{
+       width: 100%;
+   }
+   .col{
+    flex: 0 0 52.5%;
+    max-width: 52.5%;
+   }
+   .text{
+    margin-left: 0.2rem;  
+}
+}
